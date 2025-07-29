@@ -12,31 +12,33 @@ export default function HomePage() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Header */}
-      <header className="px-4 lg:px-6 h-16 flex items-center border-b bg-white/80 backdrop-blur-md sticky top-0 z-50">
-        <Link href="/" className="flex items-center justify-center">
+      <header className="px-4 lg:px-6 h-16 flex items-center border-b bg-gradient-to-br from-primary-50 via-white to-secondary-50 backdrop-blur-md sticky top-0 z-50">
+        {/* <Link href="/" className="flex items-center justify-center">
           <Image
             src="/Logo-CodevAINavBar.png"
-            width={50}
-            height={50}
+            width={150}
+            height={200}
             alt="CodevAI Logo"
-            className="h-8 w-8 rounded-full"
+            className="bg-gradient-to-br from-primary-500 to-secondary-500 h-8 w-8"
           />
-        </Link>
+        </Link> */}
         <nav className="ml-auto flex gap-4 sm:gap-6">
-          <Link href="#services" className="text-sm font-medium hover:text-primary-600 transition-colors">
+          <Link href="#services" className="text-sm font-medium text-gray-800 hover:text-primary-500 transition-colors">
             Servicios
           </Link>
-          <Link href="#apps" className="text-sm font-medium hover:text-primary-600 transition-colors">
+          <Link href="#apps" className="text-sm font-medium text-gray-800 hover:text-primary-500 transition-colors">
             Nuestras Apps
           </Link>
-          <Link href="#about" className="text-sm font-medium hover:text-primary-600 transition-colors">
+          <Link href="#about" className="text-sm font-medium text-gray-800 hover:text-primary-500 transition-colors">
             Acerca de
           </Link>
-          <Link href="#contact" className="text-sm font-medium hover:text-primary-600 transition-colors">
+          <Link href="#contact" className="text-sm font-medium text-gray-800 hover:text-primary-500 transition-colors">
             Contacto
           </Link>
         </nav>
       </header>
+
+
 
       <main className="flex-1">
         {/* Hero Section */}
@@ -353,18 +355,8 @@ export default function HomePage() {
 
       {/* Footer */}
       <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t bg-gray-50">
-        <p className="text-xs text-gray-600">© 2024 CodevAI. All rights reserved.</p>
-        <nav className="sm:ml-auto flex gap-4 sm:gap-6">
-          <Link href="/privacy-policy" className="text-xs hover:text-primary-600 transition-colors">
-            Política de Privacidad
-          </Link>
-          <Link href="/account-deletion" className="text-xs hover:text-primary-600 transition-colors">
-            Eliminación de Cuenta
-          </Link>
-          <Link href="#contact" className="text-xs hover:text-primary-600 transition-colors">
-            Contacto
-          </Link>
-        </nav>
+        <p className="text-xs text-gray-600">© 2025 CodevAI. Todos los derechos reservados.</p>
+
       </footer>
     </div>
   )
