@@ -15,7 +15,7 @@ export default function HomePage() {
       <header className="px-4 lg:px-6 h-16 flex items-center border-b bg-white/80 backdrop-blur-md sticky top-0 z-50">
         <Link href="/" className="flex items-center justify-center">
           <Image
-            src="/CodevAINavBar.png"
+            src="/Logo-CodevAINavBar.png"
             width={50}
             height={50}
             alt="CodevAI Logo"
