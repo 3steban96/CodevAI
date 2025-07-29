@@ -3,7 +3,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Badge } from "@/components/ui/badge"
-import { CheckCircle, Code, Palette, Rocket, Users, Zap, Download, Star } from "lucide-react"
+import { CheckCircle, Code, Palette, Rocket, Users, Zap, Download, Star, Trash } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 import { apps } from "@/lib/apps"
@@ -23,19 +23,16 @@ export default function HomePage() {
         </Link>
         <nav className="ml-auto flex gap-4 sm:gap-6">
           <Link href="#services" className="text-sm font-medium hover:text-primary-600 transition-colors">
-            Services
+            Servicios
           </Link>
           <Link href="#apps" className="text-sm font-medium hover:text-primary-600 transition-colors">
-            Our Apps
+            Nuestras Apps
           </Link>
           <Link href="#about" className="text-sm font-medium hover:text-primary-600 transition-colors">
-            About
+            Acerca de
           </Link>
           <Link href="#contact" className="text-sm font-medium hover:text-primary-600 transition-colors">
-            Contact
-          </Link>
-          <Link href="/privacy-policy" className="text-sm font-medium hover:text-primary-600 transition-colors">
-            Privacy
+            Contacto
           </Link>
         </nav>
       </header>
@@ -49,47 +46,48 @@ export default function HomePage() {
               <div className="flex flex-col justify-center space-y-4">
                 <div className="space-y-2">
                   <div className="inline-flex items-center rounded-full border border-primary-200 bg-primary-50 px-3 py-1 text-sm font-medium text-primary-700">
-                    🚀 AI-Powered Development
+                    🚀 Desarrollo Impulsado por IA
                   </div>
                   <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-                    Transform Ideas Into
+                    Transforma Ideas en
                     <span className="bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text text-transparent">
                       {" "}
-                      Smart Apps
+                      Apps Inteligentes
                     </span>
                   </h1>
                   <p className="max-w-[600px] text-gray-600 md:text-xl">
-                    We create intelligent mobile applications powered by AI. From concept to launch, we're your trusted
-                    partner in building the next generation of mobile experiences.
+                    Creamos aplicaciones móviles inteligentes impulsadas por IA. Desde el concepto hasta el lanzamiento,
+                    somos tu socio de confianza para construir la próxima generación de experiencias móviles.
                   </p>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                  <Button
+                  <Link href="#contact">
+                  <Button                   
                     size="lg"
                     className="h-12 px-8 bg-gradient-to-r from-primary-600 to-primary-700 hover:from-primary-700 hover:to-primary-800"
-                  >
-                    Start Your Project
-                  </Button>
+                  >                    
+                    Inicia tu Proyecto
+                  </Button></Link>
                   <Button
                     variant="outline"
                     size="lg"
                     className="h-12 px-8 border-primary-200 text-primary-700 hover:bg-primary-50 bg-transparent"
                   >
-                    View Our Apps
+                    Ver Nuestras Apps
                   </Button>
                 </div>
                 <div className="flex items-center gap-4 text-sm text-gray-600">
                   <div className="flex items-center gap-1">
                     <CheckCircle className="h-4 w-4 text-secondary-500" />
-                    <span>Free Consultation</span>
+                    <span>Consulta Gratuita</span>
                   </div>
                   <div className="flex items-center gap-1">
                     <CheckCircle className="h-4 w-4 text-secondary-500" />
-                    <span>AI Integration</span>
+                    <span>Integración IA</span>
                   </div>
                   <div className="flex items-center gap-1">
                     <CheckCircle className="h-4 w-4 text-secondary-500" />
-                    <span>30-Day Support</span>
+                    <span>Soporte 30 Días</span>
                   </div>
                 </div>
               </div>
@@ -97,11 +95,11 @@ export default function HomePage() {
                 <div className="relative">
                   <div className="absolute inset-0 bg-gradient-to-r from-primary-400 to-secondary-400 rounded-xl blur-3xl opacity-30"></div>
                   <Image
-                    src="/placeholder.svg?height=400&width=300&text=AI+Mobile+App"
-                    width={300}
+                    src="/telefono-3d.png?height=400&width=300&text=AI+Mobile+App"
+                    width={250}
                     height={400}
                     alt="AI Mobile App Mockup"
-                    className="relative aspect-[3/4] overflow-hidden rounded-xl object-cover shadow-2xl"
+                    className="relative aspect-[1/2] overflow-hidden rounded-xl object-cover shadow-2xl"
                   />
                 </div>
               </div>
@@ -114,9 +112,10 @@ export default function HomePage() {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Our Services</h2>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Nuestros Servicios</h2>
                 <p className="max-w-[900px] text-gray-600 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Comprehensive AI-powered mobile app development services tailored to your business needs
+                  Servicios integrales de desarrollo de aplicaciones móviles impulsadas por IA adaptados a las
+                  necesidades de tu negocio
                 </p>
               </div>
             </div>
@@ -126,24 +125,25 @@ export default function HomePage() {
                   <div className="h-12 w-12 bg-gradient-to-br from-primary-500 to-primary-600 rounded-lg flex items-center justify-center">
                     <Code className="h-6 w-6 text-white" />
                   </div>
-                  <CardTitle>AI-Native Development</CardTitle>
+                  <CardTitle>Desarrollo Nativo con IA</CardTitle>
                   <CardDescription>
-                    iOS and Android apps built with cutting-edge AI integration and machine learning capabilities
+                    Apps iOS y Android construidas con integración de IA de vanguardia y capacidades de aprendizaje
+                    automático
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-2 text-sm">
                     <li className="flex items-center gap-2">
                       <CheckCircle className="h-4 w-4 text-secondary-500" />
-                      AI-Powered Features
+                      Funciones Impulsadas por IA
                     </li>
                     <li className="flex items-center gap-2">
                       <CheckCircle className="h-4 w-4 text-secondary-500" />
-                      Machine Learning Integration
+                      Integración de Aprendizaje Automático
                     </li>
                     <li className="flex items-center gap-2">
                       <CheckCircle className="h-4 w-4 text-secondary-500" />
-                      Smart Analytics
+                      Análisis Inteligente
                     </li>
                   </ul>
                 </CardContent>
@@ -153,24 +153,25 @@ export default function HomePage() {
                   <div className="h-12 w-12 bg-gradient-to-br from-secondary-500 to-secondary-600 rounded-lg flex items-center justify-center">
                     <Zap className="h-6 w-6 text-white" />
                   </div>
-                  <CardTitle>Cross-Platform AI</CardTitle>
+                  <CardTitle>IA Multiplataforma</CardTitle>
                   <CardDescription>
-                    React Native and Flutter apps with unified AI services that work seamlessly across platforms
+                    Apps React Native y Flutter con servicios de IA unificados que funcionan perfectamente en todas las
+                    plataformas
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-2 text-sm">
                     <li className="flex items-center gap-2">
                       <CheckCircle className="h-4 w-4 text-secondary-500" />
-                      Unified AI Backend
+                      Backend de IA Unificado
                     </li>
                     <li className="flex items-center gap-2">
                       <CheckCircle className="h-4 w-4 text-secondary-500" />
-                      Cross-Platform ML
+                      ML Multiplataforma
                     </li>
                     <li className="flex items-center gap-2">
                       <CheckCircle className="h-4 w-4 text-secondary-500" />
-                      Shared Intelligence
+                      Inteligencia Compartida
                     </li>
                   </ul>
                 </CardContent>
@@ -180,24 +181,25 @@ export default function HomePage() {
                   <div className="h-12 w-12 bg-gradient-to-br from-purple-500 to-purple-600 rounded-lg flex items-center justify-center">
                     <Palette className="h-6 w-6 text-white" />
                   </div>
-                  <CardTitle>Intelligent UI/UX</CardTitle>
+                  <CardTitle>UI/UX Inteligente</CardTitle>
                   <CardDescription>
-                    AI-driven design optimization with adaptive interfaces that learn from user behavior
+                    Optimización de diseño impulsada por IA con interfaces adaptativas que aprenden del comportamiento
+                    del usuario
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-2 text-sm">
                     <li className="flex items-center gap-2">
                       <CheckCircle className="h-4 w-4 text-secondary-500" />
-                      Adaptive Interfaces
+                      Interfaces Adaptativas
                     </li>
                     <li className="flex items-center gap-2">
                       <CheckCircle className="h-4 w-4 text-secondary-500" />
-                      Behavioral Analytics
+                      Análisis de Comportamiento
                     </li>
                     <li className="flex items-center gap-2">
                       <CheckCircle className="h-4 w-4 text-secondary-500" />
-                      Smart Personalization
+                      Personalización Inteligente
                     </li>
                   </ul>
                 </CardContent>
@@ -211,9 +213,9 @@ export default function HomePage() {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Our Apps</h2>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Nuestras Apps</h2>
                 <p className="max-w-[900px] text-gray-600 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Discover the intelligent mobile applications we've built for various industries
+                  Descubre las aplicaciones móviles inteligentes que hemos construido para diversas industrias
                 </p>
               </div>
             </div>
@@ -250,21 +252,16 @@ export default function HomePage() {
                       ))}
                     </div>
                     <div className="flex items-center justify-between pt-2">
-                      <div className="flex items-center gap-1">
-                        <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                        <span className="text-sm font-medium">4.8</span>
-                        <span className="text-xs text-gray-500">(2.1k)</span>
-                      </div>
                       <div className="flex gap-2">
                         <Link href={`/apps/${app.id}/privacy`}>
                           <Button variant="ghost" size="sm" className="text-xs">
-                            Privacy
+                            Privacidad
                           </Button>
                         </Link>
-                        <Link href={app.downloadUrl} target="_blank">
-                          <Button size="sm" className="text-xs bg-gradient-to-r from-primary-600 to-primary-700">
-                            <Download className="h-3 w-3 mr-1" />
-                            Download
+                        <Link href={`/apps/${app.id}/delete-account`} target="_blank">
+                          <Button size="sm" className="text-xs bg-gradient-to-r from-red-600 to-red-700">
+                            <Trash className="h-3 w-3 mr-1" />
+                            Tutorial eliminación cuenta
                           </Button>
                         </Link>
                       </div>
@@ -283,42 +280,23 @@ export default function HomePage() {
               <div className="flex flex-col justify-center space-y-4">
                 <div className="space-y-2">
                   <div className="inline-block rounded-lg bg-gradient-to-r from-primary-100 to-secondary-100 px-3 py-1 text-sm font-medium text-primary-700">
-                    About CodevAI
+                    Acerca de CodevAI
                   </div>
                   <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                    Pioneering AI-Driven Mobile Innovation
+                    Pioneros en Innovación Móvil Impulsada por IA
                   </h2>
                   <p className="max-w-[600px] text-gray-600 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                    With over 5 years of experience in mobile app development and 2 years specializing in AI
-                    integration, we've helped startups and enterprises build intelligent mobile solutions that adapt and
-                    learn from user behavior.
+                    Con más de 2 años de experiencia en desarrollo de aplicaciones móviles especializándonos en
+                    integración de IA, hemos ayudado a startups y empresas a construir soluciones móviles inteligentes
+                    que se adaptan y aprenden del comportamiento del usuario.
                   </p>
                 </div>
-                <div className="grid grid-cols-2 gap-4">
-                  <div className="flex items-center gap-2">
-                    <div className="h-8 w-8 bg-gradient-to-br from-primary-500 to-primary-600 rounded-lg flex items-center justify-center">
-                      <Users className="h-4 w-4 text-white" />
-                    </div>
-                    <div>
-                      <div className="font-semibold">50+ Clients</div>
-                      <div className="text-sm text-gray-500">Happy Customers</div>
-                    </div>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <div className="h-8 w-8 bg-gradient-to-br from-secondary-500 to-secondary-600 rounded-lg flex items-center justify-center">
-                      <Rocket className="h-4 w-4 text-white" />
-                    </div>
-                    <div>
-                      <div className="font-semibold">100+ Apps</div>
-                      <div className="text-sm text-gray-500">Successfully Launched</div>
-                    </div>
-                  </div>
-                </div>
+
               </div>
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-r from-primary-400 to-secondary-400 rounded-xl blur-3xl opacity-20"></div>
                 <Image
-                  src="/placeholder.svg?height=400&width=550&text=CodevAI+Team"
+                  src="/Logo-CodevAI.png?height=400&width=550&text=CodevAI+Team"
                   width={550}
                   height={400}
                   alt="CodevAI Team"
@@ -337,33 +315,34 @@ export default function HomePage() {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Get In Touch</h2>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Ponte en Contacto</h2>
                 <p className="max-w-[600px] text-gray-600 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Ready to build your next AI-powered mobile app? Let's discuss your ideas and bring them to life.
+                  ¿Listo para construir tu próxima aplicación móvil impulsada por IA? Hablemos de tus ideas y hagámoslas
+                  realidad.
                 </p>
               </div>
             </div>
             <div className="mx-auto max-w-2xl space-y-4 py-12">
               <form className="space-y-4">
                 <div className="grid grid-cols-2 gap-4">
-                  <Input placeholder="First Name" className="border-primary-200 focus:border-primary-400" />
-                  <Input placeholder="Last Name" className="border-primary-200 focus:border-primary-400" />
+                  <Input placeholder="Nombre" className="border-primary-200 focus:border-primary-400" />
+                  <Input placeholder="Apellido" className="border-primary-200 focus:border-primary-400" />
                 </div>
                 <Input
                   type="email"
-                  placeholder="Email Address"
+                  placeholder="Correo Electrónico"
                   className="border-primary-200 focus:border-primary-400"
                 />
-                <Input placeholder="Company (Optional)" className="border-primary-200 focus:border-primary-400" />
+                <Input placeholder="Empresa (Opcional)" className="border-primary-200 focus:border-primary-400" />
                 <Textarea
-                  placeholder="Tell us about your AI app idea..."
+                  placeholder="Cuéntanos sobre tu idea de app con IA..."
                   className="min-h-[120px] border-primary-200 focus:border-primary-400"
                 />
                 <Button
                   type="submit"
                   className="w-full bg-gradient-to-r from-primary-600 to-secondary-600 hover:from-primary-700 hover:to-secondary-700"
                 >
-                  Send Message
+                  Enviar Mensaje
                 </Button>
               </form>
             </div>
@@ -376,13 +355,13 @@ export default function HomePage() {
         <p className="text-xs text-gray-600">© 2024 CodevAI. All rights reserved.</p>
         <nav className="sm:ml-auto flex gap-4 sm:gap-6">
           <Link href="/privacy-policy" className="text-xs hover:text-primary-600 transition-colors">
-            Privacy Policy
+            Política de Privacidad
           </Link>
           <Link href="/account-deletion" className="text-xs hover:text-primary-600 transition-colors">
-            Account Deletion
+            Eliminación de Cuenta
           </Link>
           <Link href="#contact" className="text-xs hover:text-primary-600 transition-colors">
-            Contact
+            Contacto
           </Link>
         </nav>
       </footer>

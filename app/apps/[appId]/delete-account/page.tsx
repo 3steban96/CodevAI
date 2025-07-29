@@ -34,16 +34,16 @@ export default function AppDeleteAccountPage({ params }: PageProps) {
         </Link>
         <nav className="ml-auto flex gap-4 sm:gap-6">
           <Link href="/" className="text-sm font-medium hover:text-primary-600 transition-colors">
-            Home
+            Inicio
           </Link>
           <Link href="/#apps" className="text-sm font-medium hover:text-primary-600 transition-colors">
-            Our Apps
+            Nuestras Apps
           </Link>
           <Link
             href={`/apps/${app.id}/privacy`}
             className="text-sm font-medium hover:text-primary-600 transition-colors"
           >
-            Privacy Policy
+            Política de Privacidad
           </Link>
         </nav>
       </header>
@@ -54,7 +54,7 @@ export default function AppDeleteAccountPage({ params }: PageProps) {
             <Link href="/">
               <Button variant="ghost" className="mb-4">
                 <ArrowLeft className="mr-2 h-4 w-4" />
-                Back to Home
+                Volver al Inicio
               </Button>
             </Link>
 
@@ -68,8 +68,8 @@ export default function AppDeleteAccountPage({ params }: PageProps) {
                 className="rounded-lg"
               />
               <div>
-                <h1 className="text-3xl font-bold tracking-tighter">Delete Your {app.name} Account</h1>
-                <p className="text-gray-600 mt-2">Step-by-step guide to permanently delete your account and data</p>
+                <h1 className="text-3xl font-bold tracking-tighter">Eliminar tu Cuenta de {app.name}</h1>
+                <p className="text-gray-600 mt-2">Guía paso a paso para eliminar permanentemente tu cuenta y datos</p>
               </div>
             </div>
           </div>
@@ -77,25 +77,25 @@ export default function AppDeleteAccountPage({ params }: PageProps) {
           {/* Important Notice */}
           <Alert className="mb-8 border-red-200 bg-red-50">
             <AlertTriangle className="h-4 w-4 text-red-600" />
-            <AlertTitle className="text-red-800">Important Notice</AlertTitle>
+            <AlertTitle className="text-red-800">Aviso Importante</AlertTitle>
             <AlertDescription className="text-red-700">
-              Deleting your {app.name} account is permanent and irreversible. All your data, settings, and content will
-              be permanently removed from our servers and cannot be recovered.
+              Eliminar tu cuenta de {app.name} es permanente e irreversible. Todos tus datos, configuraciones y
+              contenido serán eliminados permanentemente de nuestros servidores y no podrán ser recuperados.
             </AlertDescription>
           </Alert>
 
           {/* Methods Section */}
           <section className="mb-12">
-            <h2 className="text-2xl font-semibold mb-6">How to Delete Your Account</h2>
+            <h2 className="text-2xl font-semibold mb-6">Cómo Eliminar tu Cuenta</h2>
             <div className="grid gap-6 md:grid-cols-2">
               {/* In-App Method */}
               <Card className="border-primary-100">
                 <CardHeader>
                   <div className="flex items-center gap-2">
                     <Smartphone className="h-6 w-6 text-primary-600" />
-                    <CardTitle>From {app.name} App</CardTitle>
+                    <CardTitle>Desde la App {app.name}</CardTitle>
                   </div>
-                  <CardDescription>The quickest and most direct method</CardDescription>
+                  <CardDescription>El método más rápido y directo</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-4">
@@ -104,8 +104,8 @@ export default function AppDeleteAccountPage({ params }: PageProps) {
                         1
                       </div>
                       <div>
-                        <p className="font-medium">Open {app.name}</p>
-                        <p className="text-sm text-gray-600">Make sure you're logged into your account</p>
+                        <p className="font-medium">Abrir {app.name}</p>
+                        <p className="text-sm text-gray-600">Asegúrate de haber iniciado sesión en tu cuenta</p>
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
@@ -113,8 +113,8 @@ export default function AppDeleteAccountPage({ params }: PageProps) {
                         2
                       </div>
                       <div>
-                        <p className="font-medium">Go to Settings</p>
-                        <p className="text-sm text-gray-600">Look for the gear icon or "Settings" menu</p>
+                        <p className="font-medium">Ir a Ajustes</p>
+                        <p className="text-sm text-gray-600">Busca el icono de engranaje o el menú "Ajustes"</p>
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
@@ -122,8 +122,8 @@ export default function AppDeleteAccountPage({ params }: PageProps) {
                         3
                       </div>
                       <div>
-                        <p className="font-medium">Select "Account & Privacy"</p>
-                        <p className="text-sm text-gray-600">Find the account management section</p>
+                        <p className="font-medium">Seleccionar "Cuenta y Privacidad"</p>
+                        <p className="text-sm text-gray-600">Encuentra la sección de gestión de cuenta</p>
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
@@ -131,8 +131,8 @@ export default function AppDeleteAccountPage({ params }: PageProps) {
                         4
                       </div>
                       <div>
-                        <p className="font-medium">Tap "Delete Account"</p>
-                        <p className="text-sm text-gray-600">Usually located at the bottom of the page</p>
+                        <p className="font-medium">Tocar "Eliminar Cuenta completa"</p>
+                        <p className="text-sm text-gray-600">Normalmente ubicado en la parte inferior de la página</p>
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
@@ -140,8 +140,8 @@ export default function AppDeleteAccountPage({ params }: PageProps) {
                         5
                       </div>
                       <div>
-                        <p className="font-medium">Confirm deletion</p>
-                        <p className="text-sm text-gray-600">Read the warnings and confirm your decision</p>
+                        <p className="font-medium">Confirmar la eliminación</p>
+                        <p className="text-sm text-gray-600">Lee las advertencias y confirma tu decisión</p>
                       </div>
                     </div>
                   </div>
@@ -153,9 +153,9 @@ export default function AppDeleteAccountPage({ params }: PageProps) {
                 <CardHeader>
                   <div className="flex items-center gap-2">
                     <Mail className="h-6 w-6 text-secondary-600" />
-                    <CardTitle>Via Email Request</CardTitle>
+                    <CardTitle>Mediante Solicitud por Email</CardTitle>
                   </div>
-                  <CardDescription>If you can't access the app</CardDescription>
+                  <CardDescription>Si no puedes acceder a la app</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-4">
@@ -164,8 +164,8 @@ export default function AppDeleteAccountPage({ params }: PageProps) {
                         1
                       </div>
                       <div>
-                        <p className="font-medium">Send an email</p>
-                        <p className="text-sm text-gray-600">To: {app.id}@codevai.com</p>
+                        <p className="font-medium">Enviar un email</p>
+                        <p className="text-sm text-gray-600">A: {app.id}@codevai.cloud</p>
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
@@ -173,8 +173,8 @@ export default function AppDeleteAccountPage({ params }: PageProps) {
                         2
                       </div>
                       <div>
-                        <p className="font-medium">Subject line</p>
-                        <p className="text-sm text-gray-600">"Delete {app.name} Account Request"</p>
+                        <p className="font-medium">Asunto</p>
+                        <p className="text-sm text-gray-600">"Solicitud de Eliminación de Cuenta de {app.name}"</p>
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
@@ -182,8 +182,10 @@ export default function AppDeleteAccountPage({ params }: PageProps) {
                         3
                       </div>
                       <div>
-                        <p className="font-medium">Include information</p>
-                        <p className="text-sm text-gray-600">Registered email, username, reason for deletion</p>
+                        <p className="font-medium">Incluir información</p>
+                        <p className="text-sm text-gray-600">
+                          Email registrado, nombre de usuario, motivo de la eliminación
+                        </p>
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
@@ -191,8 +193,8 @@ export default function AppDeleteAccountPage({ params }: PageProps) {
                         4
                       </div>
                       <div>
-                        <p className="font-medium">Identity verification</p>
-                        <p className="text-sm text-gray-600">Answer our security questions</p>
+                        <p className="font-medium">Verificación de identidad</p>
+                        <p className="text-sm text-gray-600">Responder a nuestras preguntas de seguridad</p>
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
@@ -200,8 +202,8 @@ export default function AppDeleteAccountPage({ params }: PageProps) {
                         5
                       </div>
                       <div>
-                        <p className="font-medium">Final confirmation</p>
-                        <p className="text-sm text-gray-600">Confirm your request via email</p>
+                        <p className="font-medium">Confirmación final</p>
+                        <p className="text-sm text-gray-600">Confirmar tu solicitud por email</p>
                       </div>
                     </div>
                   </div>
@@ -212,95 +214,87 @@ export default function AppDeleteAccountPage({ params }: PageProps) {
 
           {/* What Gets Deleted */}
           <section className="mb-12">
-            <h2 className="text-2xl font-semibold mb-6">What Data Will Be Deleted</h2>
+            <h2 className="text-2xl font-semibold mb-6">Qué Datos se Eliminarán</h2>
             <Card>
               <CardHeader>
                 <div className="flex items-center gap-2">
                   <Trash2 className="h-6 w-6 text-red-600" />
-                  <CardTitle>Data permanently removed from {app.name}</CardTitle>
+                  <CardTitle>Datos eliminados permanentemente de {app.name}</CardTitle>
                 </div>
               </CardHeader>
               <CardContent>
                 <div className="grid gap-4 md:grid-cols-2">
                   <div className="space-y-2">
-                    <h4 className="font-medium">Personal Information</h4>
+                    <h4 className="font-medium">Información Personal</h4>
                     <ul className="text-sm text-gray-600 space-y-1">
-                      <li>• Name and profile information</li>
-                      <li>• Email address and contact details</li>
-                      <li>• Profile picture and avatar</li>
-                      <li>• Account preferences and settings</li>
-                      <li>• Linked social media accounts</li>
+                      <li>• Nombre e información de perfil</li>
+                      <li>• Dirección de correo electrónico y detalles de contacto</li>
+                      <li>• Historial de medicamentos y citas</li>
                     </ul>
                   </div>
                   <div className="space-y-2">
-                    <h4 className="font-medium">App-Specific Data</h4>
+                    <h4 className="font-medium">Datos Específicos de la App</h4>
                     <ul className="text-sm text-gray-600 space-y-1">
                       {app.category === "Health & Fitness" && (
                         <>
-                          <li>• Workout history and progress</li>
-                          <li>• Health metrics and measurements</li>
-                          <li>• Fitness goals and achievements</li>
-                          <li>• Nutrition and meal data</li>
+                          <li>• Métricas y mediciones de salud</li>
                         </>
                       )}
                       {app.category === "Productivity" && (
                         <>
-                          <li>• Tasks and project data</li>
-                          <li>• Team collaborations</li>
-                          <li>• Time tracking records</li>
-                          <li>• Document attachments</li>
+                          <li>• Tareas y datos del proyecto</li>
+                          <li>• Colaboraciones en equipo</li>
+                          <li>• Registros de seguimiento del tiempo</li>
+                          <li>• Archivos adjuntos de documentos</li>
                         </>
                       )}
                       {app.category === "Food & Drink" && (
                         <>
-                          <li>• Saved recipes and favorites</li>
-                          <li>• Meal plans and shopping lists</li>
-                          <li>• Dietary preferences</li>
-                          <li>• Recipe ratings and reviews</li>
+                          <li>• Recetas guardadas y favoritas</li>
+                          <li>• Planes de comidas y listas de compras</li>
+                          <li>• Preferencias dietéticas</li>
+                          <li>• Calificaciones y reseñas de recetas</li>
                         </>
                       )}
                       {app.category === "Health & Wellness" && (
                         <>
-                          <li>• Meditation session history</li>
-                          <li>• Mindfulness progress tracking</li>
-                          <li>• Custom meditation preferences</li>
-                          <li>• Sleep and relaxation data</li>
+                          <li>• Historial de sesiones de meditación</li>
+                          <li>• Seguimiento del progreso de la atención plena</li>
+                          <li>• Preferencias de meditación personalizadas</li>
+                          <li>• Datos de sueño y relajación</li>
                         </>
                       )}
                       {app.category === "Finance" && (
                         <>
-                          <li>• Transaction history</li>
-                          <li>• Budget and spending data</li>
-                          <li>• Financial goals and targets</li>
-                          <li>• Bill reminders and alerts</li>
+                          <li>• Historial de transacciones</li>
+                          <li>• Datos de presupuesto y gastos</li>
+                          <li>• Metas y objetivos financieros</li>
+                          <li>• Recordatorios y alertas de facturas</li>
                         </>
                       )}
                       {app.category === "Education" && (
                         <>
-                          <li>• Learning progress and achievements</li>
-                          <li>• Course completions and certificates</li>
-                          <li>• Study materials and notes</li>
-                          <li>• Language proficiency data</li>
+                          <li>• Progreso y logros de aprendizaje</li>
+                          <li>• Finalización de cursos y certificados</li>
+                          <li>• Materiales y notas de estudio</li>
+                          <li>• Datos de dominio del idioma</li>
                         </>
                       )}
                     </ul>
                   </div>
                   <div className="space-y-2">
-                    <h4 className="font-medium">Usage Data</h4>
+                    <h4 className="font-medium">Datos de Uso</h4>
                     <ul className="text-sm text-gray-600 space-y-1">
-                      <li>• App usage statistics</li>
-                      <li>• Feature interaction history</li>
-                      <li>• Device and location data</li>
-                      <li>• Crash reports and error logs</li>
+                      <li>• Estadísticas de uso de la aplicación</li>
+                      <li>• Historial de interacción de funciones</li>
+                      <li>• Datos del dispositivo y la ubicación</li>
+                      <li>• Informes de fallos y registros de errores</li>
                     </ul>
                   </div>
                   <div className="space-y-2">
-                    <h4 className="font-medium">Social Features</h4>
+                    <h4 className="font-medium">Características Sociales</h4>
                     <ul className="text-sm text-gray-600 space-y-1">
-                      <li>• Friends and connections</li>
-                      <li>• Messages and communications</li>
-                      <li>• Shared content and posts</li>
-                      <li>• Community interactions</li>
+                      <li>• Perfiles creados</li>
                     </ul>
                   </div>
                 </div>
@@ -310,12 +304,12 @@ export default function AppDeleteAccountPage({ params }: PageProps) {
 
           {/* Timeline */}
           <section className="mb-12">
-            <h2 className="text-2xl font-semibold mb-6">Deletion Timeline</h2>
+            <h2 className="text-2xl font-semibold mb-6">Cronograma de Eliminación</h2>
             <Card>
               <CardHeader>
                 <div className="flex items-center gap-2">
                   <Clock className="h-6 w-6 text-primary-600" />
-                  <CardTitle>Account deletion process for {app.name}</CardTitle>
+                  <CardTitle>Proceso de eliminación de cuenta para {app.name}</CardTitle>
                 </div>
               </CardHeader>
               <CardContent>
@@ -325,42 +319,20 @@ export default function AppDeleteAccountPage({ params }: PageProps) {
                       0h
                     </div>
                     <div>
-                      <h4 className="font-medium">Request received</h4>
+                      <h4 className="font-medium">Solicitud recibida</h4>
                       <p className="text-sm text-gray-600">
-                        Your account is immediately deactivated and hidden from other users
-                      </p>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-4">
-                    <div className="flex h-8 w-8 items-center justify-center rounded-full bg-yellow-100 text-yellow-600 font-semibold">
-                      24h
-                    </div>
-                    <div>
-                      <h4 className="font-medium">Grace period</h4>
-                      <p className="text-sm text-gray-600">
-                        You have 24 hours to cancel the deletion if you change your mind
-                      </p>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-4">
-                    <div className="flex h-8 w-8 items-center justify-center rounded-full bg-orange-100 text-orange-600 font-semibold">
-                      7d
-                    </div>
-                    <div>
-                      <h4 className="font-medium">Primary data deletion</h4>
-                      <p className="text-sm text-gray-600">
-                        All personal data and app content is removed from our primary servers
+                        Tu cuenta se desactiva inmediatamente.
                       </p>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
                     <div className="flex h-8 w-8 items-center justify-center rounded-full bg-red-100 text-red-600 font-semibold">
-                      30d
+                      5M
                     </div>
                     <div>
-                      <h4 className="font-medium">Complete deletion</h4>
+                      <h4 className="font-medium">Eliminacion de cuenta</h4>
                       <p className="text-sm text-gray-600">
-                        All backup data and logs are permanently deleted. Process is irreversible
+                        Todo lo relacionado con tu cuenta se elimina de nuestros servidores.
                       </p>
                     </div>
                   </div>
@@ -368,115 +340,40 @@ export default function AppDeleteAccountPage({ params }: PageProps) {
               </CardContent>
             </Card>
           </section>
-
-          {/* Before You Delete */}
-          <section className="mb-12">
-            <h2 className="text-2xl font-semibold mb-6">Before You Delete Your {app.name} Account</h2>
-            <div className="grid gap-6 md:grid-cols-2">
-              <Card className="border-primary-100">
-                <CardHeader>
-                  <CardTitle className="text-lg">Consider these alternatives</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <ul className="space-y-3">
-                    <li className="flex items-start gap-2">
-                      <div className="h-2 w-2 rounded-full bg-primary-600 mt-2"></div>
-                      <div>
-                        <p className="font-medium">Temporarily deactivate</p>
-                        <p className="text-sm text-gray-600">Hide your profile without deleting data</p>
-                      </div>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <div className="h-2 w-2 rounded-full bg-primary-600 mt-2"></div>
-                      <div>
-                        <p className="font-medium">Adjust privacy settings</p>
-                        <p className="text-sm text-gray-600">Control what information you share</p>
-                      </div>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <div className="h-2 w-2 rounded-full bg-primary-600 mt-2"></div>
-                      <div>
-                        <p className="font-medium">Disable notifications</p>
-                        <p className="text-sm text-gray-600">Reduce interruptions without deleting</p>
-                      </div>
-                    </li>
-                  </ul>
-                </CardContent>
-              </Card>
-
-              <Card className="border-secondary-100">
-                <CardHeader>
-                  <CardTitle className="text-lg">Backup your data</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <ul className="space-y-3">
-                    <li className="flex items-start gap-2">
-                      <div className="h-2 w-2 rounded-full bg-secondary-600 mt-2"></div>
-                      <div>
-                        <p className="font-medium">Export your data</p>
-                        <p className="text-sm text-gray-600">Request a copy of your information</p>
-                      </div>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <div className="h-2 w-2 rounded-full bg-secondary-600 mt-2"></div>
-                      <div>
-                        <p className="font-medium">Save important content</p>
-                        <p className="text-sm text-gray-600">Screenshots, files, and achievements</p>
-                      </div>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <div className="h-2 w-2 rounded-full bg-secondary-600 mt-2"></div>
-                      <div>
-                        <p className="font-medium">Note your progress</p>
-                        <p className="text-sm text-gray-600">Record achievements and milestones</p>
-                      </div>
-                    </li>
-                  </ul>
-                </CardContent>
-              </Card>
-            </div>
-          </section>
-
           {/* Support Section */}
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold mb-6">Need Help?</h2>
+            <h2 className="text-2xl font-semibold mb-6">¿Necesitas Ayuda?</h2>
             <Card>
               <CardHeader>
                 <div className="flex items-center gap-2">
                   <MessageCircle className="h-6 w-6 text-primary-600" />
-                  <CardTitle>Contact {app.name} Support</CardTitle>
+                  <CardTitle>Contacta con el Soporte de {app.name}</CardTitle>
                 </div>
                 <CardDescription>
-                  If you have problems with the deletion process or questions about your data
+                  Si tienes problemas con el proceso de eliminación o preguntas sobre tus datos
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="grid gap-4 md:grid-cols-2">
                   <div>
-                    <h4 className="font-medium mb-2">Contact information</h4>
+                    <h4 className="font-medium mb-2">Información de contacto</h4>
                     <div className="space-y-2 text-sm">
                       <p>
-                        <strong>Email:</strong> {app.id}@codevai.com
+                        <strong>Email:</strong> {app.id}@codevai.cloud
                       </p>
                       <p>
-                        <strong>General Support:</strong> support@codevai.com
-                      </p>
-                      <p>
-                        <strong>Phone:</strong> (555) 123-4567
-                      </p>
-                      <p>
-                        <strong>Hours:</strong> Mon-Fri 9:00-18:00 PST
+                        <strong>Soporte General:</strong> support@codevai.cloud
                       </p>
                     </div>
                   </div>
                   <div>
-                    <h4 className="font-medium mb-2">Information to include</h4>
+                    <h4 className="font-medium mb-2">Información a incluir</h4>
                     <ul className="text-sm text-gray-600 space-y-1">
-                      <li>• Email registered with {app.name}</li>
-                      <li>• Username or user ID</li>
-                      <li>• Description of the issue</li>
-                      <li>• Screenshots (if applicable)</li>
-                      <li>• Device and app version</li>
+                      <li>• Email registrado con {app.name}</li>
+                      <li>• Nombre de usuario</li>
+                      <li>• Descripción del problema</li>
+                      <li>• Capturas de pantalla (si corresponde)</li>
+                      <li>• Versión del dispositivo y de la aplicación</li>
                     </ul>
                   </div>
                 </div>
@@ -491,10 +388,10 @@ export default function AppDeleteAccountPage({ params }: PageProps) {
         <p className="text-xs text-gray-600">© 2024 CodevAI. All rights reserved.</p>
         <nav className="sm:ml-auto flex gap-4 sm:gap-6">
           <Link href={`/apps/${app.id}/privacy`} className="text-xs hover:text-primary-600 transition-colors">
-            Privacy Policy
+            Política de Privacidad
           </Link>
           <Link href="/privacy-policy" className="text-xs hover:text-primary-600 transition-colors">
-            General Privacy
+            Privacidad General
           </Link>
           <Link href="/#contact" className="text-xs hover:text-primary-600 transition-colors">
             Contact
