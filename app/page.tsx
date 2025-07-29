@@ -14,12 +14,13 @@ export default function HomePage() {
       {/* Header */}
       <header className="px-4 lg:px-6 h-16 flex items-center border-b bg-white/80 backdrop-blur-md sticky top-0 z-50">
         <Link href="/" className="flex items-center justify-center">
-          <div className="h-8 w-8 bg-gradient-to-br from-primary-500 to-secondary-500 rounded-lg flex items-center justify-center">
-            <Code className="h-5 w-5 text-white" />
-          </div>
-          <span className="ml-2 text-xl font-bold bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text text-transparent">
-            CodevAI
-          </span>
+          <Image
+            src="/CodevAINavBar.png"
+            width={50}
+            height={50}
+            alt="CodevAI Logo"
+            className="h-8 w-8 rounded-full"
+          />
         </Link>
         <nav className="ml-auto flex gap-4 sm:gap-6">
           <Link href="#services" className="text-sm font-medium hover:text-primary-600 transition-colors">
